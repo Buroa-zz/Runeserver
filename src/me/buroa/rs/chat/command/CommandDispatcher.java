@@ -5,7 +5,7 @@ import java.util.Map;
 
 import me.buroa.model.Speech;
 import me.buroa.rs.Runeserver;
-import me.buroa.rs.chat.command.impl.HistoryCommandListener;
+import me.buroa.rs.chat.command.impl.InfoCommandListener;
 import me.buroa.rs.chat.command.impl.PmCommandListener;
 import me.buroa.rs.chat.command.impl.PostCommandListener;
 import me.buroa.rs.chat.command.impl.RightsCommandListener;
@@ -30,7 +30,7 @@ public final class CommandDispatcher {
 		register(".rights", new RightsCommandListener());
 		register(".post", new PostCommandListener());
 		register(".pm", new PmCommandListener());
-		register(".history", new HistoryCommandListener());
+		register(".info", new InfoCommandListener());
 	}
 
 	/**

@@ -70,7 +70,7 @@ public abstract class VBulletin {
 	 * @return The url document.
 	 * @throws IOException if an exception occurs.
 	 */
-	protected Document document(String url) throws IOException {
+	public Document document(String url) throws IOException {
 		return document(url, false);
 	}
 
@@ -81,7 +81,7 @@ public abstract class VBulletin {
 	 * @return The url document.
 	 * @throws IOException if an exception occurs.
 	 */
-	protected Document document(String url, boolean post) throws IOException {
+	public Document document(String url, boolean post) throws IOException {
 		return document(url, false, null);
 	}
 
@@ -92,7 +92,7 @@ public abstract class VBulletin {
 	 * @return The url document.
 	 * @throws IOException if an exception occurs.
 	 */
-	protected Document document(String url, boolean post, Map<String, String> postmap) throws IOException {
+	public Document document(String url, boolean post, Map<String, String> postmap) throws IOException {
 		final Connection con = JsoupUtil.getConnection(url);
 		con.cookies(cookies);
 		if (postmap == null)
