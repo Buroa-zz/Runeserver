@@ -1,9 +1,7 @@
 package me.buroa;
 
 import me.buroa.model.Authentication;
-import me.buroa.model.User;
 import me.buroa.rs.Runeserver;
-import me.buroa.utils.UserUtil;
 
 /**
  * The shoutbox class.
